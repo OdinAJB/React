@@ -25,10 +25,10 @@ export const FavoriteButton: React.FC<FavoriteButtonProps> = ({
   };
   return (
     <button
-      className="bg-white p-1 rounden-full absolute top-2 left-2"
+      className="bg-white p-1 rounded-full absolute top-2 left-2"
       onClick={onClick}
     >
-      {isFavorite ? <FaHeart fill="EF444" /> : <FaRegHeart fill="EF444" />}
+      {isFavorite ? <FaHeart fill="red" /> : <FaRegHeart fill="red" />}
     </button>
   );
 };
