@@ -16,22 +16,22 @@ export const PokemonInfo = () => {
     [pokemonData]
   );
   return (
-    <div className="flex flex-row justify-between shadow-lg bg-gray-100 rounded-lg">
+    <div className="flex flex-row justify-between shadow-lg bg-gray-100 rounded-lg ">
       <div
-        className={`${mainType}-background w-72 h-72 rounded-l-ñg items-center`}
+        className={`${mainType}-background w-72 h-74 rounded-l-lg items-center`}
       >
         <img
           src={pokemonData?.sprites?.front_default}
           alt={pokemonData?.name ?? ""}
-          className="mx-auto w-72 h-72"
+          className="mx-auto w-72 h-74"
         />
       </div>
       <div className="flex flex-col grow p-5 gap-3">
-        <div className="realative"> 
-        <h1 className="text 3xl">{capitalizeFirstLetter(pokemonData?.name??"")}</h1>
+        <div className="relative"> 
+        <h1 className="text-3xl">{capitalizeFirstLetter(pokemonData?.name??"")}</h1>
         <TypeIcons types={pokemonData?.types ??[]}/>
         </div>
-        
+    
         <span>{`Weight: ${convertLbsToKg(pokemonData?.weight ?? 0)} Kg`}</span>
         <span>{`Height: ${convertInchesToCm(pokemonData?.height ?? 0)} Cm`}</span>
         <PokemonSprites pokemonName={pokemonName}/>

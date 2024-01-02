@@ -17,9 +17,9 @@ export const useFavoriteStore = create<FavoriteStore>((set)=> ({
 },
     deleteFavorite: (id:string) => {
         set((state)=>{
-        const favorites = state.favorites.filter((favorite)=> favorite!== id);
+        const favorites = state.favorites.filter((favorite) => favorite!== id);
         localStorage.setItem("favorite-pokemons", favorites.join(","));
-        return{favorites};
+        return{ favorites };
     });
 }
 }));
