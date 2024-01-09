@@ -9,7 +9,7 @@ const PokemonList: React.FC = () => {
   return (
     <Grid goToNextPage={goToNextPage} goToPreviousPage={goToPreviouspage}>
       {pokemonList?.map((pokemon) => (
-        <PokemonCard key={pokemon?.name} pokemon={pokemon} />
+        <PokemonCard key={pokemon?.name} pokemon={pokemon}/>
       ))}
     </Grid>
   );

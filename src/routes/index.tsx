@@ -11,7 +11,7 @@ const AppRoutes = () => (
     <Route
       path="/"
       element={
-        <React.Suspense fallback={<div>Loading...</div>}>  {/*Ampliarme lo que necesite en el Loading*/}
+        <React.Suspense fallback={<div>Loading...</div>}>  
           <Pokedex />
         </React.Suspense>
       }
@@ -19,7 +19,7 @@ const AppRoutes = () => (
     <Route
       path="/pokemon/:pokemonName"
       element={
-        <React.Suspense fallback={<div>Loading...</div>}>  {/*Ampliarme lo que necesite en el Loading*/}
+        <React.Suspense fallback={<div>Loading...</div>}>  
           <PokemonProfile />
         </React.Suspense>
       }
@@ -27,7 +27,7 @@ const AppRoutes = () => (
     <Route
       path="/type/:typeName"
       element={
-        <React.Suspense fallback={<div>Loading...</div>}>  {/*Ampliarme lo que necesite en el Loading*/}
+        <React.Suspense fallback={<div>Loading...</div>}>  
           <PokemonByType />
         </React.Suspense>
       }
@@ -35,7 +35,7 @@ const AppRoutes = () => (
     <Route
       path="/favorite"
       element={
-        <React.Suspense fallback={<div>Loading...</div>}>  {/*Ampliarme lo que necesite en el Loading*/}
+        <React.Suspense fallback={<div>Loading...</div>}>  
           <FavoritePokemon />
         </React.Suspense>
       }
