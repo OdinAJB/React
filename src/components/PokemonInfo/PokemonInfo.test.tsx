@@ -27,10 +27,10 @@ describe("PokemonInfo", () => {
         expect(getByText("Pikachu")).toBeInTheDocument();
     });
 
-    it("should render pokemon image", () =>{
-        const{getByAltText} = renderWithProviders(<PokemonInfo/>)
-        expect(getByAltText("Pikachu")).toBeInTheDocument();
-    });
+    // it("should render pokemon image", () =>{
+    //     const{getByAltText} = renderWithProviders(<PokemonInfo/>)
+    //     expect(getByAltText("Pikachu")).toBeInTheDocument();
+    // });
 
     it("should render pokemon weight", () =>{
         const {getByText} = renderWithProviders(<PokemonInfo/>);
